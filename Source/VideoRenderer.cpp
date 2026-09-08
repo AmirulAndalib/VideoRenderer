@@ -1744,9 +1744,8 @@ STDMETHODIMP CMpcVideoRenderer::GetString(LPCSTR field, LPWSTR* value, int* char
 		switch (exFmt.VideoTransferMatrix) {
 		default:
 		case DXVA2_VideoTransferMatrix_BT709: str = L"TV.709"; break;
-		case DXVA2_VideoTransferMatrix_BT601:
 		case VIDEOTRANSFERMATRIX_FCC:
-			str = L"TV.601"; break;
+		case DXVA2_VideoTransferMatrix_BT601: str = L"TV.601"; break;
 		case MFVideoTransferMatrix_BT2020_10: str = L"TV.2020"; break;
 		}
 	}
