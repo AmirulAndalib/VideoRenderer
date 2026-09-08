@@ -235,8 +235,8 @@ public:
 
 	virtual void SwitchFullScreen(bool set) {};
 
-	DXVA2_ExtendedFormat inputFormat() const {
-		return m_decExFmt;
+	DXVA2_ExtendedFormat getSrcExFormat() const {
+		return m_srcExFmt;
 	};
 
 protected:
